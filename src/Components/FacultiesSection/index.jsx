@@ -32,7 +32,7 @@ export default function FacultiesSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
-    <section className="px-32 py-12 bg-gradient-to-r from-yellow-400 to-[#fde579] ...">
+    <section className="px-32 py-24 bg-gradient-to-r from-yellow-400 to-[#fde579] ...">
       <div
         className="grid grid-cols-2 px-[100px] gap-20 text-black"
         ref={ref}
@@ -62,7 +62,7 @@ export default function FacultiesSection() {
             Engage in thought-provoking discussions, participate in cultural
             events, and forge lifelong friendships.
           </p>
-          <div className="flex flex-wrap gap-5 py-12">
+          <div className="flex flex-wrap gap-5 pt-12">
             {data.map((value) => (
               <Box
                 title={value.title}

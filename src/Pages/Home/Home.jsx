@@ -1,5 +1,5 @@
 import React from "react";
-import BackgroundImage from "../../Assets/background.png";
+import BackgroundImage from "../../Assets/background.jpg";
 import BackGroundSection from "../../Components/BackgroundImage/index";
 import FacultiesSection from "../../Components/FacultiesSection";
 import StatisticGlance from "../../Components/StatisticGlance/index";

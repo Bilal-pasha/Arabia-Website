@@ -8,9 +8,9 @@ import { BsYoutube } from "react-icons/bs";
 const Footer = () => {
   return (
     <>
-      <footer className=" bg-gradient-to-r from-yellow-400 to-[#fde579ed] ...">
-        <section class="text-black shadow-lg lg:px-16">
-          <div class="md:px-0 lg:grid md:grid lg:grid-cols-4 md:grid-rows-1 sm:flex sm:flex-col text-green-900 lg:py-8 md:py-10 sm:py-0">
+      <footer className=" bg-[#483900]">
+        <section class="text-[#f7f7f7] shadow-lg lg:px-16">
+          <div class="md:px-0 lg:grid md:grid lg:grid-cols-4 md:grid-rows-1 sm:flex sm:flex-col lg:py-8 md:py-10 sm:py-0">
             <div class="lg:col-span-1 md:col-span-1 lg:-order-first sm:order-last md:justify-items-center sm:row-span-1 lg:pl-6 lg:pr-0 md:pl-8 sm:px-12 md:px-[50px] space-y-3 text-semigray font-[Poppins] md:w-max text-xs lg:py-0 sm:py-10">
               <div className="flex items-center pb-2">
                 <a href="/" className="flex flex-col items-center ">
@@ -70,7 +70,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center text-sm text-green-900 font-[Poppins]">
+          <div className="flex justify-center text-sm  font-[Poppins]">
             © 2023 Alarabiamedia.org All rights reserved.
           </div>
         </section>

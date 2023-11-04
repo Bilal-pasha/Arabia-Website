@@ -5,7 +5,7 @@ import Button from "../Button/index";
 export default function Toolbar() {
   return (
     <>
-      <nav class="flex h-[140px] items-center lg:justify-between md:justify-between sm:justify-between lg:px-16 md:px-5 sm:px-4 dark-mode:text-gray-200 py-4 dark-mode:bg-gray-800 bg-gradient-to-r from-yellow-400 to-[#fde579ed] ... text-gray-700 sticky top-0 shadow-lg z-50	">
+      <nav class="flex h-[100px] items-center lg:justify-between md:justify-between sm:justify-between lg:px-16 md:px-5 sm:px-4 dark-mode:text-gray-200 py-4 dark-mode:bg-gray-800 bg-gradient-to-r from-yellow-400 to-[#fde579ed] ... text-gray-700 sticky top-0 shadow-lg z-50	">
         <input type="checkbox" id="check" class="hidden peer" checked />
         <label
           for="check"
@@ -16,9 +16,9 @@ export default function Toolbar() {
         <div className="flex items-center pb-2">
           <a href="/" className="flex flex-col items-center">
             <img src={Logo} alt="logoImage" />
-            <p className="urdutext text-xl ">
+            {/* <p className="urdutext text-xl ">
               جامعہ عربیہ اسلامیہ <span className="text-xs">اسکاؤٹ کالونی</span>
-            </p>
+            </p> */}
           </a>
         </div>
         <ul
