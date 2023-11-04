@@ -28,8 +28,6 @@ body {
   .box {
     width: 90px;
     height: 90px;
-    margin-top: 43vh;
-    
     background: var(--accent);
     background-image: url(../../Assets/Logo.png);
   }
@@ -37,7 +35,7 @@ body {
     .box {
       width: 90px;
       height: 90px;
-      margin-top: 43vh;
+      margin-top: 40vh;
       
       background: var(--accent);
       display: flex;
