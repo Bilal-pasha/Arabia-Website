@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 
 export default function Statistic() {
   const [counter, setCounter] = useState(0);
-  const [value, setValue] = useState(false);
+  const [value, setValue] = useState(true);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCounter((prevCounter) => {
-        if (prevCounter !== 1500 && value === true) {
+        if (prevCounter !== 0 && value === true) {
           return prevCounter + 1;
         } else {
           return prevCounter; // Return the same value to stop further updates
@@ -32,18 +32,18 @@ export default function Statistic() {
               Statistic Glance at Jamia Arabia Islamia
             </h2>
           </div>
-          <div className="flex justify-center space-x-[300px]">
+          <div className="flex mx-auto justify-center space-x-[300px]">
             <div className="flex flex-col items-center px-5 py-6 ">
               <h2 className="text-7xl font-bold">{counter}</h2>
-              <p className="text-lg font-semibold">TOTAL PASS STUDENTS</p>
+              <p className="text-lg font-semibold">PASS STUDENTS</p>
             </div>
             <div className="flex flex-col items-center px-5 py-6 ">
               <h2 className="text-7xl font-bold">{counter}</h2>
-              <p className="text-lg font-semibold">TOTAL STUDENTS</p>
+              <p className="text-lg font-semibold">STUDENTS</p>
             </div>
             <div className="flex flex-col items-center px-5 py-6 ">
               <h2 className="text-7xl font-bold">{counter}</h2>
-              <p className="text-lg font-semibold">TOTAL FACULTIES</p>
+              <p className="text-lg font-semibold">FACULTIES</p>
             </div>
           </div>
           <div className="flex justify-center space-x-[300px]">
@@ -53,7 +53,7 @@ export default function Statistic() {
             </div>
             <div className="flex flex-col items-center px-5 py-6 ">
               <h2 className="text-7xl font-bold">{counter}</h2>
-              <p className="text-lg font-semibold">TOTAL STAFF</p>
+              <p className="text-lg font-semibold">STAFF</p>
             </div>
             <div className="flex flex-col items-center px-5 py-6 ">
               <h2 className="text-7xl font-bold">{counter}</h2>
