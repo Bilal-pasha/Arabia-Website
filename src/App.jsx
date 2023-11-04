@@ -16,7 +16,7 @@ export default function App() {
   return (
     <>
       {timer ? (
-        <section className=" bg-white w-full">
+        <section className="">
           <Spinner key={0} />
         </section>
       ) : (

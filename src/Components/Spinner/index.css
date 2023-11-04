@@ -20,15 +20,17 @@ body {
     color: var(--accent);
   }
  
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
   .box {
     width: 90px;
     height: 90px;
     margin-top: 43vh;
-    margin-left: 48%;
+    
     background: var(--accent);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-image: url(../../Assets/Logo.png);
   }
   @media only screen and (max-width: 600px) {
@@ -36,7 +38,7 @@ body {
       width: 90px;
       height: 90px;
       margin-top: 43vh;
-      margin-left: 42%;
+      
       background: var(--accent);
       display: flex;
       align-items: center;
