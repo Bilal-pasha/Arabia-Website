@@ -17,16 +17,13 @@ body {
   
     margin: 0;
     padding: 0;
-    background: rgb(238,233,71);
-    background: linear-gradient(90deg, rgba(238,233,71,1) 0%, rgba(247,245,168,1) 100%);
     color: var(--accent);
-    padding-bottom: 100px;
   }
  
   .box {
     width: 90px;
     height: 90px;
-    margin-top: 41vh;
+    margin-top: 43vh;
     margin-left: 48%;
     background: var(--accent);
     display: flex;

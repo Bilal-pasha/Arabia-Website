@@ -1,13 +1,10 @@
-import BackGroundSection from "./Components/BackgroundImage/index";
-import BackgroundImage from "./Assets/background.png";
 import { useEffect, useState } from "react";
 import { Spinner } from "./Components/Spinner/Index";
-import Layout from "./layout/Defaultlayout/index";
-import Whitebox from "./Components/WhiteSection/index";
-import { AnimatePresence } from "framer-motion";
-import FacultiesSection from "./Components/FacultiesSection";
-import StatisticGlance from "../src/Components/StatisticGlance/index";
-import NewsSection from "./Components/News/index";
+import Navbar from "./Components/Navbar/Index";
+import Footer from "./Components/Footer/index";
+import { BrowserRouter as Router } from "react-router-dom";
+import { motion } from "framer-motion";
+import AnimatedRoutes from "./Components/AnimatedRoutes/index";
 export default function App() {
   const [timer, setTimer] = useState(true);
 
@@ -19,22 +16,22 @@ export default function App() {
   return (
     <>
       {timer ? (
-        <AnimatePresence>
+        <section className=" bg-white w-full">
           <Spinner key={0} />
-        </AnimatePresence>
+        </section>
       ) : (
         <>
-          <Layout>
-            <BackGroundSection
-              ImageSource={BackgroundImage}
-              ImageDesciption="Background-Image"
-              style="w-full h-[70vh] object-fit bg-cover bg-fixed "
-            />
-            <Whitebox />
-            <FacultiesSection />
-            <StatisticGlance />
-            <NewsSection />
-          </Layout>
+          <Router>
+            <motion.div
+              initial={{ width: 0 }}
+              animate={{ width: "100%" }}
+              exit={{ x: window.innerWidth }}
+            >
+              <Navbar />
+              <AnimatedRoutes />
+              <Footer />
+            </motion.div>
+          </Router>
         </>
       )}
     </>
