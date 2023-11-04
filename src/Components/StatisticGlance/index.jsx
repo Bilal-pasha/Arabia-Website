@@ -22,42 +22,49 @@ export default function Statistic() {
   }, []);
   return (
     <section className="flex justify-center items-center section-image">
-      <div className=" bg-[#ffffffb5] w-full h-[50vh]">
+      <div className=" bg-[#ffffffb5] w-full lg:h-[50vh]">
         <motion.div
-          className=" px-32 space-y-6"
+          className=" lg:px-32 sm:px-8 sm:py-8 lg:space-y-6"
           whileInView={() => setValue(true)}
         >
-          <div className="py-8">
-            <h2 className="text-5xl font-semibold font-[Roboto] text-center">
+          <div className="lg:py-8">
+            <h2 className="lg:text-5xl sm:text-3xl font-semibold font-[Roboto] text-center">
               Statistic Glance at Jamia Arabia Islamia
             </h2>
           </div>
-          <div className="flex mx-auto justify-center space-x-[300px]">
-            <div className="flex flex-col items-center px-5 py-6 ">
-              <h2 className="text-7xl font-bold">{counter}</h2>
-              <p className="text-lg font-semibold">PASS STUDENTS</p>
+
+          <div
+            className="flex mx-auto justify-center lg:space-x-[300px] lg:text-lg sm:text-xs font-normal sm:space-x-12 
+"
+          >
+            <div className="flex flex-col items-center py-6 ">
+              <h2 className="lg:text-7xl sm:text-4xl font-bold">{counter}</h2>
+              <p className="">PASS STUDENTS</p>
             </div>
-            <div className="flex flex-col items-center px-5 py-6 ">
-              <h2 className="text-7xl font-bold">{counter}</h2>
-              <p className="text-lg font-semibold">STUDENTS</p>
+            <div className="flex flex-col items-center py-6 ">
+              <h2 className="lg:text-7xl sm:text-4xl font-bold">{counter}</h2>
+              <p className="">STUDENTS</p>
             </div>
-            <div className="flex flex-col items-center px-5 py-6 ">
-              <h2 className="text-7xl font-bold">{counter}</h2>
-              <p className="text-lg font-semibold">FACULTIES</p>
+            <div className="flex flex-col items-center py-6 ">
+              <h2 className="lg:text-7xl sm:text-4xl font-bold">{counter}</h2>
+              <p className="">FACULTIES</p>
             </div>
           </div>
-          <div className="flex justify-center space-x-[300px]">
-            <div className="flex flex-col items-center px-5 py-6 ">
-              <h2 className="text-7xl font-bold">{counter}</h2>
-              <p className="text-lg font-semibold">TEACHERS</p>
+          <div
+            className="flex justify-center lg:space-x-[300px] sm:space-x-12 lg:text-lg sm:text-xs font-normal
+"
+          >
+            <div className="flex flex-col items-center py-6 ">
+              <h2 className="lg:text-7xl sm:text-4xl font-bold">{counter}</h2>
+              <p className="">TEACHERS</p>
             </div>
-            <div className="flex flex-col items-center px-5 py-6 ">
-              <h2 className="text-7xl font-bold">{counter}</h2>
-              <p className="text-lg font-semibold">STAFF</p>
+            <div className="flex flex-col items-center py-6 ">
+              <h2 className="lg:text-7xl sm:text-4xl font-bold">{counter}</h2>
+              <p className="">STAFF</p>
             </div>
-            <div className="flex flex-col items-center px-5 py-6 ">
-              <h2 className="text-7xl font-bold">{counter}</h2>
-              <p className="text-lg font-semibold">ALUMNI</p>
+            <div className="flex flex-col items-center py-6 ">
+              <h2 className="lg:text-7xl sm:text-4xl font-bold">{counter}</h2>
+              <p className="">ALUMNI</p>
             </div>
           </div>
         </motion.div>

@@ -22,9 +22,8 @@ export default function Toolbar() {
           </a>
         </div>
         <ul
-          class="lg:flex lg:items-center md:hidden sm:hidden lg:static sm:fixed sm:peer-checked:left-[-100%] sm:left-0 sm:transition-all md:duration-[900ms] sm:duration-[900ms] md:top-[70px] sm:top-[70px]
-            lg:w-auto lg:h-auto md:w-full sm:w-full md:h-[100vh] sm:h-[100vh] text-black lg:space-y-0 md:space-y-5 sm:space-y-5 lg:py-0 md:py-10 sm:py-10 md:z-20 sm:z-20 space-x-6
-           "
+          class="lg:flex lg:items-center md:hidden sm:hidden xl:text-[16px] lg:text-[13px]
+          font-[Poppins] xl:space-x-0 lg:space-x-0"
         >
           <li class="lg:border-none md:border-b-[1px] lg:py-0 md:py-4 sm:py-4 md:border-[#cdc6c6] sm:border-b-[1px] sm:border-[#cdc6c6]">
             <div class="relative">

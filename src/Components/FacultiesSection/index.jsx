@@ -32,9 +32,9 @@ export default function FacultiesSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
-    <section className="px-32 py-24 bg-gradient-to-r from-yellow-400 to-[#fde579] ...">
+    <section className="lg:px-32 lg:py-24 sm:py-12 bg-gradient-to-r from-yellow-400 to-[#fde579] ...">
       <div
-        className="grid grid-cols-2 px-[100px] gap-20 text-black"
+        className="grid lg:grid-cols-2 sm:grid-rows-1 lg:px-[100px] sm:px-6 lg:gap-20 sm:gap-12 text-black"
         ref={ref}
         style={{
           transform: isInView ? "none" : "translateX(-200px)",
@@ -42,11 +42,11 @@ export default function FacultiesSection() {
           transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
         }}
       >
-        <div className="col-span-1 space-y-6">
+        <div className="lg:col-span-1 sm:row-span-1 space-y-6 lg:text-left sm:text-center">
           <p className="">
             Discover the infinite possibilities that await you - OUR FACULTIES
           </p>
-          <h2 className="font-[Poppins] text-[32px] font-bold ">
+          <h2 className="font-[Poppins] lg:text-[32px] sm:text-2xl font-bold ">
             Embrace Global Perspectives: In a rapidly changing world, we equip
             you with the tools to bridge the gap between tradition and
             modernity.
@@ -55,14 +55,14 @@ export default function FacultiesSection() {
             <span class="relative z-10">See All Faculties</span>
           </button>
         </div>
-        <div className="col-span-1">
+        <div className="lg:col-span-1 sm:row-span-1 lg:text-left sm:text-center">
           <p className="">
             Be Part of a Vibrant Community: Join a diverse and welcoming
             community of students who share your passion for learning and faith.
             Engage in thought-provoking discussions, participate in cultural
             events, and forge lifelong friendships.
           </p>
-          <div className="flex flex-wrap gap-5 pt-12">
+          <div className="flex lg:flex-row sm:flex-col  lg:flex-wrap sm:justify-center sm:items-center gap-5 pt-12">
             {data.map((value) => (
               <Box
                 title={value.title}

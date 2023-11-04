@@ -11,7 +11,7 @@ export default function Home() {
       <BackGroundSection
         ImageSource={BackgroundImage}
         ImageDesciption="Background-Image"
-        style="w-full h-[70vh] object-fit bg-cover bg-fixed "
+        style="w-full lg:h-[70vh] md:h-auto sm:h-auto object-fit bg-cover bg-fixed "
       />
       <Whitebox />
       <FacultiesSection />

@@ -5,19 +5,19 @@ import "./index.css";
 const Whitebox = () => {
   return (
     <>
-      <section className="bg-[#fffcfc] text-black px-32 py-20 backGroundLite">
-        <div className="px-[100px] space-y-20">
+      <section className="bg-[#fffcfc] text-black lg:px-32 lg:py-20 sm:py-12 backGroundLite">
+        <div className="lg:px-[100px] sm:px-6  lg:space-y-20 sm:space-y-12">
           <motion.div
-            className=" space-y-12 flex flex-wrap"
+            className=" lg:space-y-12 sm:space-y-6 flex flex-wrap"
             initial={{ x: -1000 }}
             animate={{ x: 0 }}
             transition={{ duration: "1" }}
           >
-            <h2 className="text-5xl font-semibold font-[Roboto] text-center">
+            <h2 className="lg:text-5xl sm:text-3xl font-semibold font-[Roboto] text-center">
               Unlock the Gateway to Wisdom and Enlightenment at Jamia Arabia
               Islamia
             </h2>
-            <blockquote class="text-2xl font-normal italic text-center text-slate-900">
+            <blockquote class="lg:text-2xl sm:text-xl font-normal italic text-center text-slate-900">
               Welcome to a world where tradition meets innovation, and faith
               meets knowledge. At .
               <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-yellow-400 relative inline-block">

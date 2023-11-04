@@ -7,9 +7,9 @@ export default function NewsSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
-    <section className="py-20 px-32 bg-gradient-to-r from-yellow-400 to-[#fde579] ...">
+    <section className="lg:py-20 lg:px-32 sm:px-8 sm:py-10 bg-gradient-to-r from-yellow-400 to-[#fde579] ...">
       <div
-        className="text-center space-y-12 px-[100px]"
+        className="text-center lg:space-y-12 sm:space-y-10 lg:px-[100px]"
         style={{
           transform: isInView ? "none" : "translateX(-200px)",
           opacity: isInView ? 1 : 0,
@@ -30,7 +30,7 @@ export default function NewsSection() {
           , we are not just an institution; we are a timeless journey of
           discovery, enlightenment, and transformation.
         </blockquote>
-        <div className="flex justify-between">
+        <div className="flex lg:flex-row sm:flex-col lg:justify-between sm:justify-center items-center sm:space-y-10">
           <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
               <img
@@ -41,19 +41,10 @@ export default function NewsSection() {
               />
             </a>
             <div class="pb-6 px-2">
-              {/* <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  Noteworthy technology acquisitions 2021
-                </h5>
-              </a> */}
               <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
                 Here are the biggest enterprise technology acquisitions of 2021
                 so far, in reverse chronological order.
               </p>
-              {/* <a
-                href="#"
-                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              > */}
               <button className="relative inline-flex items-center justify-center px-4 py-2 overflow-hidden border bg-green-900 text-white border-indigo-600 rounded-lg shadow-2xl transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-green-600 before:duration-300 before:ease-out hover:text-white hover:shadow-indigo-600 hover:before:h-40 hover:before:w-40 hover:before:opacity-80">
                 <span class="relative z-10 flex items-center">
                   Read more
@@ -87,11 +78,6 @@ export default function NewsSection() {
               />
             </a>
             <div class="pb-6 px-2">
-              {/* <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  Noteworthy technology acquisitions 2021
-                </h5>
-              </a> */}
               <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
                 Here are the biggest enterprise technology acquisitions of 2021
                 so far, in reverse chronological order.
