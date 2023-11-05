@@ -39,22 +39,13 @@ const Footer = () => {
                     <a href="/Media_training">Contact us</a>
                   </li>
                 </ul>
-                <ul class="space-y-3 space-x-1 cursor-pointer hover:text-blue-500 lg:my-0 md:mt-0 sm:my-5">
-                  <li class="hover:text-green-600">
-                    <a href="/Video_production">VIDEO PRODUCTION</a>
-                  </li>
-                </ul>
-
                 <ul class="flex flex-col space-y-3 space-x-1 cursor-pointer hover:text-blue-500 lg:my-0 md:mt-0 sm:my-5">
                   <li class="hover:text-green-600">
                     <a href="/Contact">More</a>
                   </li>
                 </ul>
               </div>
-              <div className="flex flex-row items-center justify-center lg:justify-end lg:items-start md:items-start md:text-left lg:space-x-10 md:space-x-10 sm:space-x-4 pb-6 ">
-                <div className="items-center pt-1">
-                  <p>follow us on :</p>
-                </div>
+              <div className="flex flex-row items-center justify-center lg:justify-end lg:items-start md:items-start md:text-left lg:space-x-16 md:space-x-10 sm:space-x-4 py-3 ">
                 <div>
                   <FaFacebook className="text-2xl hover:text-green-600 cursor-pointer" />
                 </div>
@@ -70,7 +61,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center lg:text-sm sm:text-xs font-[Poppins]">
+          <div className="flex justify-center lg:text-sm sm:text-xs font-[Poppins] pb-1">
             © 2023 Alarabiamedia.org All rights reserved.
           </div>
         </section>
