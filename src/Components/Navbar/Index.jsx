@@ -1,11 +1,19 @@
 import Icon from "./Hamburger";
 import Logo from "../../Assets/Logo.png";
 import Accordian from "./Accordian/Accordian";
+import { useState } from "react";
 export default function Toolbar() {
+  const [open, setOpen] = useState(false);
   return (
     <>
       <nav className="flex lg:h-[100px] sm:h-[70px] items-center lg:justify-between md:justify-between sm:justify-between lg:px-16 md:px-5 sm:px-4 dark-mode:text-gray-200 py-4 dark-mode:bg-gray-800 bg-gradient-to-r from-yellow-400 to-[#fde579ed] ... text-gray-700 sticky top-0 shadow-lg z-50	">
-        <input type="checkbox" id="check" className="hidden peer" checked />
+        <input
+          type="checkbox"
+          id="check"
+          className="hidden peer"
+          checked={false}
+          onChange={() => setOpen(!open)}
+        />
         <label
           for="check"
           className="lg:hidden md:block sm:block text-4xl cursor-pointer"
@@ -15,9 +23,6 @@ export default function Toolbar() {
         <div className="flex items-center pb-2">
           <a href="/" className="flex flex-col items-center">
             <img src={Logo} alt="logoImage" className="lg:w-full sm:w-[70%]" />
-            {/* <p className="urdutext text-xl ">
-              جامعہ عربیہ اسلامیہ <span className="text-xs">اسکاؤٹ کالونی</span>
-            </p> */}
           </a>
         </div>
         <ul
@@ -133,9 +138,14 @@ export default function Toolbar() {
             <span className="relative z-10">Sign up</span>
           </button>
         </div>
-        <div class="md:block md:peer-checked:left-[-100%] md:fixed md:left-0 md:transition-all md:duration-[900ms] md:top-[70px] md:h-[100vh] md:bg-[#fffffff2] w-full md:py-0 md:space-y-10 sm:block sm:peer-checked:left-[-100%] sm:fixed sm:left-0 sm:transition-all sm:duration-[900ms] sm:top-[70px] sm:h-[100vh] sm:bg-[#fffffff2] sm:py-0 sm:space-y-10">
-          <Accordian />
-        </div>
+        {open && (
+          <div
+            class="md:block md:peer-checked:left-[-100%] md:fixed md:left-0 md:transition-all md:duration-[900ms] md:top-[70px] md:h-[100vh] md:bg-[#fffffff2] w-full md:py-0 md:space-y-10 sm:block sm:peer-checked:left-[-100%] sm:fixed sm:left-0 sm:transition-all sm:duration-[900ms] sm:top-[70px] sm:h-[100vh] sm:bg-[#fffffff2] sm:py-0 sm:space-y-10 bg-gradient-to-r from-yellow-400 to-[#fde579ed] ..."
+            id="navbarDropdown"
+          >
+            <Accordian />
+          </div>
+        )}
       </nav>
     </>
   );

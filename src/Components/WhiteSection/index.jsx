@@ -6,13 +6,13 @@ const Whitebox = () => {
   return (
     <>
       <section className="bg-[#fffcfc] text-black lg:px-32 lg:py-20 sm:py-12 backGroundLite">
-        <div className="lg:px-[100px] sm:px-6  lg:space-y-20 sm:space-y-12">
-          <motion.div
-            className=" lg:space-y-12 sm:space-y-6 flex flex-wrap"
-            initial={{ x: -1000 }}
-            animate={{ x: 0 }}
-            transition={{ duration: "1" }}
-          >
+        <motion.div
+          className="lg:px-[100px] sm:px-6  lg:space-y-20 sm:space-y-12"
+          initial={{ x: -1000 }}
+          animate={{ x: 0 }}
+          transition={{ duration: "1" }}
+        >
+          <div className=" lg:space-y-12 sm:space-y-6 flex flex-wrap">
             <h2 className="lg:text-5xl sm:text-3xl font-semibold font-[Roboto] text-center">
               Unlock the Gateway to Wisdom and Enlightenment at Jamia Arabia
               Islamia
@@ -26,7 +26,7 @@ const Whitebox = () => {
               , we are not just an institution; we are a timeless journey of
               discovery, enlightenment, and transformation.
             </blockquote>
-          </motion.div>
+          </div>
           <div className="space-x-6 flex justify-center">
             <button class="relative px-4 py-2 overflow-hidden border bg-green-900 text-white border-indigo-600 rounded-lg shadow-2xl transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-green-600 before:duration-300 before:ease-out hover:text-white hover:shadow-indigo-600 hover:before:h-40 hover:before:w-40 hover:before:opacity-80">
               <span class="relative z-10">Faculties</span>
@@ -35,7 +35,7 @@ const Whitebox = () => {
               <span class="relative z-10">Contact</span>
             </button>
           </div>
-        </div>
+        </motion.div>
       </section>
     </>
   );

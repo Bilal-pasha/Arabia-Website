@@ -10,9 +10,11 @@ export default function index({ ImageSource, ImageDesciption, style }) {
         autoPla={true}
         infiniteLoop={true}
         showArrows={true}
-        interval={100}
+        interval={3000}
         showIndicators={false}
         axis={"horizontal"}
+        transitionTime={200}
+        width={"100%"}
       >
         <div>
           <img src={ImageSource} />
