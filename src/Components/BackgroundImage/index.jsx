@@ -6,7 +6,7 @@ import "./index.css";
 export default function index({ ImageSource, ImageDesciption, style }) {
   return (
     <>
-      <Carousel autoPlay infiniteLoop>
+      <Carousel autoPlay infiniteLoop swipeable showIndicators={false}>
         <div>
           <img src={ImageSource} />
         </div>
