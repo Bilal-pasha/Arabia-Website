@@ -5,13 +5,15 @@ import FacultiesSection from "../../Components/FacultiesSection";
 import StatisticGlance from "../../Components/StatisticGlance/index";
 import Whitebox from "../../Components/WhiteSection/index";
 import NewsSection from "../../Components/News/index";
+import BackgroundImage2 from "../../Assets/AboutBackGroundImage.jpg";
 export default function Home() {
   return (
     <>
       <BackGroundSection
         ImageSource={BackgroundImage}
+        imageSource2={BackgroundImage2}
         ImageDesciption="Background-Image"
-        style="w-full lg:h-[70vh] md:h-auto sm:h-auto object-fit bg-cover bg-fixed "
+        style="w-full lg:h-[70vh] sm:h-auto md:h-auto sm:h-auto object-contain	 bg-cover bg-fixed "
       />
       <Whitebox />
       <FacultiesSection />

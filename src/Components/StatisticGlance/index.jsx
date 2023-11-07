@@ -4,67 +4,62 @@ import { motion } from "framer-motion";
 
 export default function Statistic() {
   const [counter, setCounter] = useState(0);
-  const [value, setValue] = useState(true);
+  const [value, setValue] = useState();
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCounter((prevCounter) => {
-        if (prevCounter !== 0 && value === true) {
+        if (prevCounter !== 1500 && value === true) {
           return prevCounter + 1;
         } else {
-          return prevCounter; // Return the same value to stop further updates
+          return prevCounter;
         }
       });
     }, 0);
-
-    // Clear the interval when the component unmounts or when the condition is met
     return () => clearInterval(interval);
-  }, []);
+  }, [value]);
+  console.log(value);
   return (
-    <section className="flex justify-center items-center section-image">
+    <section className="flex justify-center items-center section-image lg:my-0 sm:my-36">
       <div className=" bg-[#ffffffb5] w-full lg:h-[50vh]">
         <motion.div
-          className=" lg:px-32 sm:px-8 sm:py-8 lg:space-y-6"
+          className=" lg:px-32 lg:py-12 sm:px-8 sm:py-8 lg:space-y-4 sm:space-y-8"
           whileInView={() => setValue(true)}
         >
-          <div className="lg:py-8">
-            <h2 className="lg:text-5xl sm:text-3xl font-semibold font-[Roboto] text-center">
-              Statistic Glance at Jamia Arabia Islamia
+          <div className="">
+            <h2 className="lg:text-5xl lg:pb-8 sm:text-3xl font-semibold font-[Roboto] text-center">
+              Statistic Glance at
+              <span className="bg-yellow-500 text-white mx-2">
+                Jamia Arabia Islamia
+              </span>
             </h2>
           </div>
-
-          <div
-            className="flex mx-auto justify-center lg:space-x-[300px] lg:text-lg sm:text-xs font-normal sm:space-x-12 
-"
-          >
-            <div className="flex flex-col items-center py-6 ">
-              <h2 className="lg:text-7xl sm:text-4xl font-bold">{counter}</h2>
-              <p className="">PASS STUDENTS</p>
+          <div className="flex justify-evenly lg:flex-row sm:flex-col lg:space-y-0 sm:space-y-8">
+            <div className="flex flex-col items-center border-[#736f6f] border-[0.5px] lg:w-[20%] shadow-2xl py-6">
+              <h2 className="lg:text-5xl sm:text-4xl font-bold">{counter}</h2>
+              <p className="">Total Pass outs</p>
             </div>
-            <div className="flex flex-col items-center py-6 ">
-              <h2 className="lg:text-7xl sm:text-4xl font-bold">{counter}</h2>
-              <p className="">STUDENTS</p>
+            <div className="flex flex-col items-center border-[#736f6f]  border-[0.5px] lg:w-[20%] shadow-2xl py-6">
+              <h2 className="lg:text-5xl sm:text-4xl font-bold">{counter}</h2>
+              <p className="">Total Students</p>
             </div>
-            <div className="flex flex-col items-center py-6 ">
-              <h2 className="lg:text-7xl sm:text-4xl font-bold">{counter}</h2>
-              <p className="">FACULTIES</p>
+            <div className="flex flex-col items-center border-[#736f6f]  border-[0.5px] lg:w-[20%] shadow-2xl py-6 ">
+              <h2 className="lg:text-5xl sm:text-4xl font-bold">{counter}</h2>
+              <p className="">Total Faculties</p>
             </div>
           </div>
-          <div
-            className="flex justify-center lg:space-x-[300px] sm:space-x-12 lg:text-lg sm:text-xs font-normal
-"
-          >
-            <div className="flex flex-col items-center py-6 ">
-              <h2 className="lg:text-7xl sm:text-4xl font-bold">{counter}</h2>
-              <p className="">TEACHERS</p>
+          <div className="flex justify-evenly lg:flex-row sm:flex-col lg:space-y-0 sm:space-y-8">
+            <div className="flex flex-col items-center border-[#736f6f]  border-[0.5px] lg:w-[20%] shadow-2xl py-6">
+              <h2 className="lg:text-5xl sm:text-4xl font-bold">{counter}</h2>
+              <p className="">Total Teachers</p>
             </div>
-            <div className="flex flex-col items-center py-6 ">
-              <h2 className="lg:text-7xl sm:text-4xl font-bold">{counter}</h2>
-              <p className="">STAFF</p>
+            <div className="flex flex-col items-center border-[#736f6f]  border-[0.5px] lg:w-[20%] shadow-2xl py-6">
+              <h2 className="lg:text-5xl sm:text-4xl font-bold">{counter}</h2>
+              <p className="">Total Staff</p>
             </div>
-            <div className="flex flex-col items-center py-6 ">
-              <h2 className="lg:text-7xl sm:text-4xl font-bold">{counter}</h2>
-              <p className="">ALUMNI</p>
+            <div className="flex flex-col items-center border-[#736f6f]  border-[0.5px] lg:w-[20%] shadow-2xl py-6 ">
+              <h2 className="lg:text-5xl sm:text-4xl font-bold">{counter}</h2>
+              <p className="">Total Alumni</p>
             </div>
           </div>
         </motion.div>

@@ -11,3 +11,18 @@
 body {
   font-family: "Roboto";
 }
+.gridbackround {
+  background-image: url(./Assets/background-lite-image.png);
+}
+.backGroundLite {
+  background-image: url(./Assets/background-lite-image.png);
+}
+.background {
+  background-image: url(./Assets/AboutBackGroundImage.jpg);
+  height: 60vh;
+  width: 100%;
+  background-size: cover;
+  object-fit: contain;
+  background-color: #3130306b;
+  background-blend-mode: darken;
+}

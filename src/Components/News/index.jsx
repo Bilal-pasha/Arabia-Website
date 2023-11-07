@@ -18,16 +18,17 @@ export default function NewsSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
-    <section className="lg:py-20 lg:px-32 sm:px-8 sm:py-10 bg-gradient-to-r from-yellow-400 to-[#fde579] ...">
-      <div className="text-center lg:space-y-12 sm:space-y-10 lg:px-[100px]">
-        <div
-          style={{
-            transform: isInView ? "none" : "translateX(-200px)",
-            opacity: isInView ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-          }}
-          ref={ref}
-        >
+    <section className="lg:py-20 lg:px-32 sm:px-8 sm:py-16 bg-gradient-to-r from-yellow-400 to-[#fde579] ...">
+      <div
+        className="text-center lg:space-y-12 sm:space-y-10 lg:px-[100px]"
+        style={{
+          transform: isInView ? "none" : "translateX(-200px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+        }}
+        ref={ref}
+      >
+        <div>
           <h2 className="font-[Poppins] text-5xl font-bold text-black">
             Latest news
           </h2>
@@ -41,7 +42,7 @@ export default function NewsSection() {
             discovery, enlightenment, and transformation.
           </blockquote>
         </div>
-        {/* <div className="flex lg:flex-row sm:flex-col lg:justify-between sm:justify-center items-center sm:space-y-10">
+        <div className="flex lg:flex-row sm:flex-col lg:justify-between sm:justify-center items-center lg:space-y-0 sm:space-y-10">
           {data.map((value) => (
             <div
               class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
@@ -84,8 +85,11 @@ export default function NewsSection() {
                 </button>
               </div>
             </div>
-          ))} 
-        </div> */}
+          ))}
+        </div>
+        <button className="text-green-900 hover:before:bg-green-600 relative  px-4 py-2 overflow-hidden border  bg-white rounded-lg  shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-green-600 before:transition-all before:duration-50 hover:text-white hover:before:left-0 hover:before:w-full">
+          <span className="relative z-10">View all News</span>
+        </button>
       </div>
     </section>
   );
