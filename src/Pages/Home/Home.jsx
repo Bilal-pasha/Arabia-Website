@@ -6,6 +6,7 @@ import StatisticGlance from "../../Components/StatisticGlance/index";
 import Whitebox from "../../Components/WhiteSection/index";
 import NewsSection from "../../Components/News/index";
 import BackgroundImage2 from "../../Assets/AboutBackGroundImage.jpg";
+import ContactForm from "../../Components/ContactForm/index";
 export default function Home() {
   return (
     <>
@@ -19,6 +20,7 @@ export default function Home() {
       <FacultiesSection />
       <StatisticGlance />
       <NewsSection />
+      <ContactForm />
     </>
   );
 }

@@ -26,6 +26,12 @@ body {
   background-color: #3130306b;
   background-blend-mode: darken;
 }
+.PhoneInputInput {
+  outline: none !important;
+}
+.formInput {
+  border-color: #9d9e9f !important;
+}
 @media screen and (min-width: 400px) {
   .background {
     height: 22vh;
