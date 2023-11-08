@@ -23,13 +23,13 @@ export default function About() {
           initial={{ x: -1000 }}
           animate={{ x: 0 }}
           transition={{ duration: "1" }}
-          className="space-y-6"
+          className="space-y-6 lg:block sm:hidden"
         >
-          <div className="text-6xl font-bold px-32 font-[Roboto] space-y-2">
+          <div className="lg:text-6xl md:text-3xl sm:text-xl font-bold px-32 font-[Roboto] space-y-2">
             <h2>Experience learning in a modern,</h2>
             <h2>comfortable environment</h2>
           </div>
-          <div className="text-lg ">
+          <div className="lg:text-lg sm:text-xs">
             <p>
               Discover the infinite possibilities that await you – because at
               Islamic Arabic University,

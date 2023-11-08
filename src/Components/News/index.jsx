@@ -28,7 +28,7 @@ export default function NewsSection() {
         }}
         ref={ref}
       >
-        <div>
+        <div className="space-y-8">
           <h2 className="font-[Poppins] text-5xl font-bold text-black">
             Latest news
           </h2>

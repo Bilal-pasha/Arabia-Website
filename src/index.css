@@ -26,3 +26,15 @@ body {
   background-color: #3130306b;
   background-blend-mode: darken;
 }
+@media screen and (min-width: 400px) {
+  .background {
+    height: 22vh;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 700px) {
+  .background {
+    height: 60vh;
+    width: 100%;
+  }
+}
