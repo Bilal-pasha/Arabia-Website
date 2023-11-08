@@ -17,7 +17,16 @@ body {
 .backGroundLite {
   background-image: url(./Assets/background-lite-image.png);
 }
-
+.section-image {
+  background-image: url(./Assets/StatisticSectionImage.png);
+  height: 70vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  background-position: initial;
+  background-attachment: fixed;
+}
 .background {
   background-image: url(./Assets/AboutBackGroundImage.jpg);
   height: 60vh;
