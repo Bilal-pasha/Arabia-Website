@@ -18,7 +18,6 @@ export default function Statistic() {
     }, 0);
     return () => clearInterval(interval);
   }, [value]);
-  console.log(value);
   return (
     <section className="flex justify-center items-center section-image lg:my-0 sm:my-36">
       <div className=" bg-[#ffffffb5] w-full lg:h-[50vh]">
