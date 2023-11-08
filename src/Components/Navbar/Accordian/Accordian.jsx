@@ -8,7 +8,7 @@ export default function AccordianComponent() {
   return (
     <>
       <div>
-        <div class="mt-[8px] border-[1px] border-[black] text-black box-border font-bold text-[16px]  py-[20px] px-[32px] hover:bg-yellow-400 cursor-pointer ">
+        <div class="mt-[8px] border-[1px] border-[#ffbc00] text-black box-border font-bold text-[16px]  py-[20px] px-[32px] hover:bg-[#f1bb21] hover:text-white cursor-pointer ">
           <input
             type="checkbox"
             id="check"
@@ -29,17 +29,17 @@ export default function AccordianComponent() {
             accusantium error.
           </div>
         </div>
-        <div class="mt-[8px] border-[1px] border-[black] text-black box-border font-bold text-[16px]  py-[20px] px-[32px] hover:bg-yellow-400 cursor-pointer">
+        <div class="mt-[8px] border-[1px] border-[#ffbc00] text-black box-border font-bold text-[16px]  py-[20px] px-[32px] hover:bg-[#f1bb21] hover:text-white cursor-pointer">
           <a href="/About" class="hover:text-blue">
             About us
           </a>
         </div>
-        <div class="mt-[8px] border-[1px] border-[black] text-black box-border font-bold text-[16px]  py-[20px] px-[32px] hover:bg-yellow-400 cursor-pointer">
-          <a href="/About" class="hover:text-blue">
+        <div class="mt-[8px] border-[1px] border-[#ffbc00] text-black box-border font-bold text-[16px]  py-[20px] px-[32px] hover:bg-[#f1bb21] hover:text-white cursor-pointer">
+          <a href="/contact" class="hover:text-blue">
             Contact us
           </a>
         </div>
-        <div class="mt-[8px] border-[1px] border-[black] text-black box-border font-bold text-[16px]  py-[20px] px-[32px] hover:bg-yellow-400 cursor-pointer">
+        <div class="mt-[8px] border-[1px] border-[#ffbc00] text-black box-border font-bold text-[16px]  py-[20px] px-[32px] hover:bg-[#f1bb21] hover:text-white cursor-pointer">
           <a href="/more" class="hover:text-blue">
             More
           </a>
