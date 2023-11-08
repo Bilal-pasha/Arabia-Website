@@ -7,7 +7,7 @@ export default function Mao() {
     <>
       <section className="bg-white lg:px-32 sm:px-6 lg:py-20 sm:py-20  backGroundLite">
         <div className="lg:px-[100px]">
-          <div className="flex lg:flex-row sm:flex-col lg:justify-between lg:space-x-32 sm:space-y-20">
+          <div className="flex lg:flex-row sm:flex-col lg:justify-between lg:space-x-32 lg:space-y-0 sm:space-y-20">
             <div
               className="space-y-5 text-lg  "
               style={{
@@ -43,7 +43,7 @@ export default function Mao() {
               <p>info@alarabiamedia.org</p>
             </div>
             <div
-              className="w-full"
+              className="w-full lg:space-y-0"
               style={{
                 transform: isInView ? "none" : "translateX(-200px)",
                 opacity: isInView ? 1 : 0,
