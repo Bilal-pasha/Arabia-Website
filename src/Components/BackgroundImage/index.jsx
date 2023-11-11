@@ -32,7 +32,9 @@ export default function index({
             </p>
             <button className="relative px-12 py-2 lg:my-4 sm:my-6 lg:text-2xl sm:text-sm overflow-hidden  bg-green-900 text-white border-indigo-600 rounded-lg shadow-2xl transition-all duration-50 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-green-600 before:duration-500 before:ease-out hover:text-white hover:shadow-indigo-600 hover:before:h-40 hover:before:w-40 hover:before:opacity-80">
               <span className="relative z-10">
-                <a href="/forms">Register now</a>{" "}
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSetRTRTg87Dlf5-pRol1fMu_F_CAkTir18cfxsDbwl7FpoYsg/viewform">
+                  Register now
+                </a>{" "}
               </span>
             </button>
           </div>
@@ -50,7 +52,9 @@ export default function index({
             </p>
             <button className="relative px-12 py-2 lg:my-4 sm:my-6 lg:text-2xl sm:text-sm overflow-hidden  bg-green-900 text-white border-indigo-600 rounded-lg shadow-2xl transition-all duration-50 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-green-600 before:duration-500 before:ease-out hover:text-white hover:shadow-indigo-600 hover:before:h-40 hover:before:w-40 hover:before:opacity-80">
               <span className="relative z-10">
-                <a href="/forms">Register now</a>{" "}
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSetRTRTg87Dlf5-pRol1fMu_F_CAkTir18cfxsDbwl7FpoYsg/viewform">
+                  Register now
+                </a>{" "}
               </span>
             </button>
           </div>
