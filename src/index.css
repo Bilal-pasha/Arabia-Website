@@ -36,6 +36,24 @@ body {
   background-color: #3130306b;
   background-blend-mode: darken;
 }
+.ScoutsImages {
+  background-image: url(./Assets/scots-camping-image.jpg);
+  height: 60vh;
+  width: 100%;
+  background-size: cover;
+  object-fit: contain;
+  background-color: #3130306b;
+  background-blend-mode: darken;
+}
+.ScoutsImages2 {
+  background-image: url(./Assets/Scouts-image.jpg);
+  height: 60vh;
+  width: 100%;
+  background-size: cover;
+  object-fit: contain;
+
+  background-blend-mode: darken;
+}
 .PhoneInputInput {
   outline: none !important;
   color: #212529 !important;
@@ -43,10 +61,28 @@ body {
 .formInput {
   border-color: #9d9e9f !important;
 }
-@media screen and (min-width: 400px) {
+@media screen and (max-width: 500px) {
   .background {
-    height: 22vh;
+    height: 20vh;
     width: 100%;
+  }
+  .ScoutsImages {
+    background-image: url(./Assets/scots-camping-image.jpg);
+    height: 20vh;
+    width: 100%;
+    background-size: cover;
+    object-fit: contain;
+    background-color: #3130306b;
+    background-blend-mode: darken;
+  }
+  .ScoutsImages2 {
+    background-image: url(./Assets/Scouts-image.jpg);
+    height: 20vh;
+    width: 100%;
+    background-size: cover;
+    object-fit: contain;
+
+    background-blend-mode: darken;
   }
 }
 @media screen and (min-width: 700px) {

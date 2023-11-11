@@ -6,7 +6,7 @@ import Contact from "../../Pages/Contact/index";
 import More from "../../Pages/More/index";
 import Faculties from "../../Pages/Faculties/index";
 import { AnimatePresence } from "framer-motion";
-
+import GoogleForm from "../../Pages/GoogleForm/index";
 export default function AnimatedRoutes() {
   const Location = useLocation();
   return (
@@ -17,6 +17,7 @@ export default function AnimatedRoutes() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/more" element={<More />} />
+        <Route path="/forms" element={<GoogleForm />} />
       </Routes>
     </AnimatePresence>
   );
