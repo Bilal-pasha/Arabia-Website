@@ -59,7 +59,7 @@ export default function index({
             </button>
           </div>
         </div>
-        <div className="background"></div>
+        {/* <div className="background"></div> */}
       </Carousel>
     </>
   );

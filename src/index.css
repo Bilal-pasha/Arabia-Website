@@ -63,7 +63,7 @@ body {
 }
 @media screen and (max-width: 500px) {
   .background {
-    height: 20vh;
+    height: 28vh;
     width: 100%;
   }
   .ScoutsImages {
