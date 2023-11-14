@@ -6,7 +6,7 @@ export default function Box({ title, description, btnValue }) {
   const isInView = useInView(ref, { once: true });
   return (
     <div
-      className="flex flex-col justify-between shadow-2xl text-black lg:w-[40%] h-[18rem] sm:w-full rounded-lg py-6 px-4 space-y-2 "
+      className="flex flex-col justify-between shadow-2xl text-black lg:w-[40%] w-auto sm:w-full rounded-lg py-6 px-4 space-y-2 "
       style={{
         transform: isInView ? "none" : "translateX(-200px)",
         opacity: isInView ? 1 : 0,
