@@ -18,8 +18,8 @@ export default function index({
         showIndicators={false}
         interval={3000}
         width={"100%"}
-      >
-        <div className="ScoutsImages flex justify-center items-end">
+        className="hidden md:block">
+        <div className="ScoutsImages flex justify-center items-end ">
           <div className="text-white lg:mb-24 sm:mb-2">
             <h2 className="lg:text-4xl sm:text-base font-bold">
               Registration for Inter Madaris Scouts Camping 2023
@@ -59,6 +59,28 @@ export default function index({
             </button>
           </div>
         </div>
+      </Carousel>
+      <Carousel
+        autoPlay
+        infiniteLoop
+        swipeable={true}
+        showIndicators={false}
+        interval={3000}
+        width={"100%"}
+        className="md:hidden block">
+        <div className="scouts-mobilImage-1 flex  justify-center items-end pb-20 text-white ">
+          <h2 className=" text-3xl bg-[#a8a8a842] py-4 px-6 animate">
+            جامعہ عربیہ اسلامیہ{" "}
+            <span className=" text-xl text-yellow-500">
+              {" "}
+              <br />
+              اسکاٹ کالونی
+            </span>
+          </h2>
+        </div>
+        <div className="scouts-mobilImage-2"></div>
+        <div className="scouts-mobilImage-3"></div>
+        <div className="scouts-mobilImage-4"></div>
       </Carousel>
     </>
   );

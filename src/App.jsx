@@ -13,20 +13,18 @@ export default function App() {
       setTimer(false);
     }, 1600);
   }, []);
+
   return (
     <>
       {timer ? (
-        <section className="">
-          <Spinner key={0} />
-        </section>
+        <Spinner key={0} />
       ) : (
         <>
           <Router>
             <motion.div
               initial={{ width: 0 }}
               animate={{ width: "100%" }}
-              exit={{ x: window.innerWidth }}
-            >
+              exit={{ x: window.innerWidth }}>
               <Navbar />
               <AnimatedRoutes />
               <Footer />

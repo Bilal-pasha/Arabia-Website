@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500&family=Roboto:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@700&family=Playfair+Display:wght@500&family=Poppins:wght@700&family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@700&family=Playfair+Display:wght@500&family=Poppins:wght@700&display=swap");
+
 .urdutext {
   font-family: "Noto Nastaliq Urdu", serif;
 }
@@ -17,14 +18,36 @@ body {
 .backGroundLite {
   background-image: url(./Assets/background-lite-image.png);
 }
-.section-image {
+.section-image-screen {
   background-image: url(./Assets/StatisticSectionImage.png);
-  height: 70vh;
+  height: 80vh;
   width: 100%;
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: cover;
-  background-position: initial;
+  background-position: center;
+  background-attachment: fixed;
+}
+@media only screen and (max-width: 600px) {
+  .section-image-mobile {
+    background-image: url(./Assets/StatisticSectionImage.png);
+    height: 80vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+}
+.section-image-mobile {
+  background-image: url(./Assets/mobile-view-2.jpg);
+  height: 110vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  /* background-position: center; */
   background-attachment: fixed;
 }
 .background {
@@ -53,6 +76,56 @@ body {
   object-fit: contain;
 
   background-blend-mode: darken;
+}
+.animate {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 2;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+.scouts-mobilImage-1 {
+  background-image: url(./Assets/slider-image-1.jpg);
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: darken;
+  height: 70vh;
+  width: 100٪;
+  background-size: cover;
+  object-fit: cover;
+  font-family: "Noto Nastaliq Urdu", serif;
+}
+.scouts-mobilImage-2 {
+  background-image: url(./Assets/slider-image-2.jpg);
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: darken;
+  height: 70vh;
+  width: 100٪;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.scouts-mobilImage-3 {
+  background-image: url(./Assets/slider-image-3.jpg);
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: darken;
+  height: 70vh;
+  width: 100٪;
+  background-size: cover;
+  object-fit: cover;
+}
+.scouts-mobilImage-4 {
+  background-image: url(./Assets/slider-image-4.jpg);
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: darken;
+  height: 70vh;
+  width: 100٪;
+  background-size: cover;
+  object-fit: cover;
 }
 .PhoneInputInput {
   outline: none !important;
