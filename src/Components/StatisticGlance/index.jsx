@@ -18,7 +18,7 @@ export default function Statistic() {
     return () => clearInterval(interval);
   }, [value]);
   return (
-    <section className="flex justify-center items-center section-image-mobile  lg:my-0 sm:my-6">
+    <section className="flex justify-center items-center section-image-mobile  lg:my-0 sm:my-6 sm:h-full">
       <div className=" bg-[#ffffff40] w-full lg:py-0 sm:py-9 ">
         <motion.div
           className=" lg:px-32 lg:py-12 sm:px-8 sm:py-0 space-y-4 sm:space-y-0"

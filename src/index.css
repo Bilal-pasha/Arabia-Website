@@ -42,7 +42,7 @@ body {
 }
 .section-image-mobile {
   background-image: url(./Assets/mobile-view-2.jpg);
-  height: 110vh;
+  height: 100vh;
   width: 100%;
   background-repeat: no-repeat;
   object-fit: cover;
