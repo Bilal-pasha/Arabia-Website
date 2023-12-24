@@ -18,7 +18,7 @@ export default function Toolbar() {
         />
         <label
           for="check"
-          className="lg:hidden md:block sm:block text-4xl cursor-pointer">
+          className="text-4xl cursor-pointer lg:hidden md:block sm:block">
           <Icon />
         </label>
         <div className="flex items-center pb-2">
@@ -35,7 +35,7 @@ export default function Toolbar() {
                 <div className="relative">
                   <button className="peer lg:px-4 md:px-0 lg:py-2 lg:text-black md:text-black">
                     <a
-                      className="lg:px-4 md:px-4 sm:px-4 py-2 mt-2 text-lg font-semibold text-green-900 rounded-lg  hover:text-green-600 dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600  md:mt-0 "
+                      className="py-2 mt-2 text-lg font-semibold text-green-900 rounded-lg lg:px-4 md:px-4 sm:px-4 hover:text-green-600 dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 md:mt-0 "
                       href="/faculties">
                       {value.text}
                     </a>
@@ -46,7 +46,7 @@ export default function Toolbar() {
                         ? value.links.map((dropdown) => {
                             return (
                               <a
-                                className="hover:text-green-600 font-semibold"
+                                className="font-semibold hover:text-green-600"
                                 href={dropdown.href}>
                                 {dropdown?.text}
                               </a>

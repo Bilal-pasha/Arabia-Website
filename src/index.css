@@ -99,7 +99,7 @@ body {
   object-fit: cover;
   font-family: "Noto Nastaliq Urdu", serif;
 }
-.scouts-mobilImage-2 {
+/* .scouts-mobilImage-2 {
   background-image: url(./Assets/slider-image-2.jpg);
   background-color: rgba(0, 0, 0, 0.3);
   background-blend-mode: darken;
@@ -108,7 +108,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: cover;
-}
+} */
 .scouts-mobilImage-3 {
   background-image: url(./Assets/slider-image-3.jpg);
   background-color: rgba(0, 0, 0, 0.3);
