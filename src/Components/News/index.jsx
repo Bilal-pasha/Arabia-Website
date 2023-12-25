@@ -1,4 +1,6 @@
+// import React, { useRef } from "react";
 import NewsImage from "../../Assets/NewsImage.png";
+// import { useInView } from "framer-motion";
 import { motion } from "framer-motion";
 import {
   Card,
@@ -27,7 +29,10 @@ export const fadeIn = (direction, type, delay, duration) => {
     },
   };
 };
+// const animateBox = { delay: 2, ease: "easeInOut", duration: 0.5 };
 function BlogPostCard({ img, title, desc, index }) {
+  // const ref = useRef(null);
+  // const isInView = useInView(ref, { once: true });
   return (
     <motion.div variants={fadeIn("right", "spring", 0.5 * index, 0.75)}>
       <Card
@@ -37,7 +42,14 @@ function BlogPostCard({ img, title, desc, index }) {
           scale: 1,
           speed: 450,
         }}
-        class="py-6 shadow-2xl"
+        className="pb-6 shadow-2xl"
+        // shadow={false}
+        // style={{
+        //   transform: isInView ? "none" : "translateX(-200px)",
+        //   opacity: isInView ? 1 : 0,
+        //   transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+        // }}
+        // ref={ref}
       >
         <CardHeader floated={false} className="w-full h-full mx-0 mb-6">
           <img src={img} alt={title} className="object-cover w-full h-full" />
