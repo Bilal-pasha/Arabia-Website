@@ -42,6 +42,7 @@ function BlogPostCard({ img, title, desc, index }) {
           scale: 1,
           speed: 450,
         }}
+        class="py-6 shadow-2xl"
         // shadow={false}
         // style={{
         //   transform: isInView ? "none" : "translateX(-200px)",
@@ -50,10 +51,10 @@ function BlogPostCard({ img, title, desc, index }) {
         // }}
         // ref={ref}
       >
-        <CardHeader floated={false} className="mx-0 mb-6 h-full w-full">
-          <img src={img} alt={title} className="h-full w-full object-cover" />
+        <CardHeader floated={false} className="w-full h-full mx-0 mb-6">
+          <img src={img} alt={title} className="object-cover w-full h-full" />
         </CardHeader>
-        <CardBody className="p-0 text-center">
+        <CardBody className="p-0 px-4 text-center">
           <Typography
             as="a"
             href="#"
@@ -65,7 +66,7 @@ function BlogPostCard({ img, title, desc, index }) {
           <Typography className="mb-6 font-normal !text-gray-500">
             {desc}
           </Typography>
-          <button className="text-green-900 hover:before:bg-green-600 relative  px-4 py-2 overflow-hidden border  bg-white rounded-lg  shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-green-600 before:transition-all before:duration-50 hover:text-white hover:before:left-0 hover:before:w-full">
+          <button className="relative px-4 py-2 overflow-hidden text-green-900 transition-all bg-white border rounded-lg shadow-2xl hover:before:bg-green-600 before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-green-600 before:transition-all before:duration-50 hover:text-white hover:before:left-0 hover:before:w-full">
             <span className="relative z-10">View all News</span>
           </button>
         </CardBody>
@@ -99,8 +100,8 @@ const posts = [
 
 export function BlogSection6() {
   return (
-    <section className="py-8 px-8 lg:py-28">
-      <div className="lg:container lg:mx-auto lg:mb-20 lg:my-0 sm:my-10 text-center lg:space-y-0 sm:space-y-6">
+    <section className="px-8 py-8 lg:py-28">
+      <div className="text-center lg:container lg:mx-auto lg:mb-20 lg:my-0 sm:my-10 lg:space-y-0 sm:space-y-6">
         <Typography
           variant="h1"
           color="blue-gray"
@@ -117,7 +118,7 @@ export function BlogSection6() {
           discovery, enlightenment, and transformation.
         </blockquote>
       </div>
-      <div className="lg:container lg:mx-auto grid grid-cols-1 gap-20 md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid grid-cols-1 gap-20 lg:container lg:mx-auto md:grid-cols-2 lg:grid-cols-4">
         {posts.map(({ img, title, desc }) => (
           <BlogPostCard key={title} img={img} title={title} desc={desc} />
         ))}

@@ -8,7 +8,7 @@ export default function Toolbar() {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <nav className="flex lg:h-[100px] sm:h-[70px] items-center lg:justify-between md:justify-between sm:justify-between lg:px-16 md:px-5 sm:px-4 dark-mode:text-gray-200 py-4 dark-mode:bg-gray-800 bg-gradient-to-r from-yellow-400 to-[#fde579ed] ... text-gray-700 sticky top-0 shadow-lg z-50	">
+      <nav className="flex items-center lg:justify-between md:justify-between sm:justify-between lg:px-16 md:px-5 sm:px-4 dark-mode:text-gray-200 py-0 dark-mode:bg-gray-800 bg-gradient-to-r from-yellow-400 to-[#fde579ed] ... text-gray-700 sticky top-0 shadow-lg z-50	">
         <input
           type="checkbox"
           id="check"
